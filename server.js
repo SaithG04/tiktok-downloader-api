@@ -5,7 +5,13 @@ const app = express();
 const port = 3000;
 const cors = require('cors');
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://tiktok-downloader-frontend.saithg04.work',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  };  
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.post('/download', async (req, res) => {
