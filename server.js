@@ -6,7 +6,7 @@ const port = 3000;
 const cors = require('cors');
 
 const corsOptions = {
-    origin: 'https://tiktok-downloader-frontend.saithg04.work',
+    origin: 'https://tiktok-downloader.saithg04.work',
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   };  
